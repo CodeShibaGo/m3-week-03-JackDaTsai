@@ -2,12 +2,12 @@
 
 # Week 3 Projects
 
-| #  |  Project   |                                   Demo                                   |
-|:--:|:----------:|:------------------------------------------------------------------------:|
-| 01 |    表單標題    |                             Demo 2024/01/14                              |
-| 02 |    無限捲動    |                                   Demo                                   |
-| 03 |   新年倒數計時   |                                   Demo                                   |
-| 04 | FAQ Slider | https://jackdatsai.github.io/m3-week-03-JackDaTsai/faq_slider/index.html |
-| 05 |   音樂播放器    |                                   Demo                                   |
-| 06 |   可排序清單    |                                   Demo                                   |
-| 07 |    擴充字     |                                   Demo                                   |
+| #  |  Project   |                                       Demo                                       |
+|:--:|:----------:|:--------------------------------------------------------------------------------:|
+| 01 |    表單標題    |                                 Demo 2024/01/14                                  |
+| 02 |    無限捲動    |                                       Demo                                       |
+| 03 |   新年倒數計時   | https://jackdatsai.github.io/m3-week-03-JackDaTsai/new_year_countdown/index.html |
+| 04 | FAQ Slider |     https://jackdatsai.github.io/m3-week-03-JackDaTsai/faq_slider/index.html     |
+| 05 |   音樂播放器    |                                       Demo                                       |
+| 06 |   可排序清單    |                                       Demo                                       |
+| 07 |    擴充字     |                                       Demo                                       |
