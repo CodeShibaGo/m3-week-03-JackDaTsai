@@ -9,5 +9,5 @@
 | 03 |   新年倒數計時   | https://jackdatsai.github.io/m3-week-03-JackDaTsai/new_year_countdown/index.html |
 | 04 | FAQ Slider |     https://jackdatsai.github.io/m3-week-03-JackDaTsai/faq_slider/index.html     |
 | 05 |   音樂播放器    |                                       Demo                                       |
-| 06 |   可排序清單    |                                       Demo                                       |
+| 06 |   可排序清單    |   https://jackdatsai.github.io/m3-week-03-JackDaTsai/sortable_list/index.html    |
 | 07 |    擴充字     |                                       Demo                                       |
