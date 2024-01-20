@@ -3,7 +3,7 @@ let page = 1;
 
 function showPosts() {
     $.ajax({
-        url: `http://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
+        url: `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
         method: 'GET',
         datatype: 'json',
         success: function (posts) {
