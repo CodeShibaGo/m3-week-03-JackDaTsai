@@ -1,30 +1,54 @@
-// This is a function declaration for 'filterPosts',
-// but it currently doesn't do anything because there's no code inside.
-function filterPosts() {
+let limit = 5;
+let page = 1;
+
+function showPosts() {
+    $.ajax({
+        url: `http://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`,
+        method: 'GET',
+        datatype: 'json',
+        success: function (posts) {
+            console.log(posts);
+            $.each(posts, function (index, post) {
+                const postEl = $("<div>").addClass("post");
+                postEl.html(`
+                    <p class="post-number">${post.id}</p>
+                    <div class="post-content">
+                        <h2 class="post-title">${post.title}</h2>
+                        <p class="post-description">${post.body}</p>
+                    </div>
+                `);
+                $(".post-container").append(postEl);
+            });
+        }
+    });
 }
 
-// This selects all 'input' elements in HTML using jQuery's selector function ($).
-// Then, an event listener is added to these input elements.
-// The event being listened for is the 'input' event which is fired when user alters the value of the input fields.
-// When this event happens, an anonymous function is invoked.
+showPosts();
+
+
+function filterPosts() {
+    const term = $("input").val().toLowerCase();
+    $(".post").css("display", "none");
+    $(`.post:contains('${term}')`).css("display", "flex");
+}
+
 $("input").on("input", function () {
-    // The function 'filterPosts' is called inside this anonymous function.
     filterPosts();
 });
 
-// Declares an empty function named showLoading
-// This function can be filled out to do something (like showing a loading image or icon) when invoked
 function showLoading() {
+    $(".loader").addClass("show");
+    setTimeout(() => {
+        $(".loader").removeClass("show");
+        setTimeout(() => {
+            page++;
+            showPosts();
+        }, 300);
+    }, 1000);
 }
 
-// Assigns an anonymous function to the scroll event of the window
-// This function will be called every time a scroll event occurs in the window
 $(window).scroll(function () {
-    // Checks if the current scroll position of the document plus the height of the viewport(window) is greater
-    // than the height of the document minus 5 (this is to detect if the scroll position is within 5 pixels from the bottom)
     if ($(document).scrollTop() + $(window).height() > $(document).height() - 5) {
-        // If the condition above is true (i.e., the user has scrolled within 5 pixels from the bottom of the document),
-        // it calls the showLoading function
         showLoading();
     }
 });
