@@ -4,8 +4,8 @@
 
 | #  |  Project   |                                        Demo                                         |
 |:--:|:----------:|:-----------------------------------------------------------------------------------:|
-| 01 |    表單標題    |                                   Demo 2024/01/14                                   |
-| 02 |    無限捲動    |                                        Demo                                         |
+| 01 |    表單標題    |    https://jackdatsai.github.io/m3-week-03-JackDaTsai/form_validator/index.html     |
+| 02 |    無限捲動    |    https://jackdatsai.github.io/m3-week-03-JackDaTsai/Infinite_scroll/index.html    |
 | 03 |   新年倒數計時   |  https://jackdatsai.github.io/m3-week-03-JackDaTsai/new_year_countdown/index.html   |
 | 04 | FAQ Slider |      https://jackdatsai.github.io/m3-week-03-JackDaTsai/faq_slider/index.html       |
 | 05 |   音樂播放器    |     https://jackdatsai.github.io/m3-week-03-JackDaTsai/music_player/index.html      |
