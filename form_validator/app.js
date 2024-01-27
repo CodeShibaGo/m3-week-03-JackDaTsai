@@ -26,7 +26,11 @@ function checkInputs() {
 
     if (passwordValue === '') {
         setErrorFor($('#password'), 'Password cannot be blank');
-    } else {
+    } 
+    if (passwordValue.length < 8) {
+        setErrorFor($('#password'), 'Password must be at least 8 characters');
+    }
+    else {
         setSuccessFor($('#password'));
     }
 
